@@ -67,11 +67,35 @@
 							<br />
 							</div>
 						</div>
-						<textarea class="form-control inp-dn" placeholder="Enter Your Message Here"></textarea>
+						<div class="row">
+							<div class="col-sm-4">
+							<div class="input-group">
+								<span class="input-group-addon inp-dn"><i class="fa fa-shopping-cart"></i></span>
+								<input type="number" class="form-control inp-dn" placeholder="Quantity" />
+							</div>
+							<br/>
+							</div>
+							<div class="col-sm-4">
+							<div class="input-group">
+								<span class="input-group-addon inp-dn"><i class="fa fa-inr"></i></span>
+								<input type="number" class="form-control inp-dn" readonly placeholder="Medicine MRP"/>
+							</div>
+							<br />
+							</div>
+							<div class="col-sm-4">
+							<div class="input-group">
+								<span class="input-group-addon inp-dn" title="Other Charges"><i class="fa fa-inr"></i></span>
+								<input type="number" class="form-control inp-dn" readonly title="Total Charges" placeholder="Other Charge"/>
+							</div>
+							<br />
+							</div>
+						</div>
 					</form>
+							<h4 class="mg-0 text-right" title="Total Charge"><i class="fa fa-inr"></i> 0.0</h4>
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn-info">Submit</button>
+					<button class="btn btn-success">Purchase</button>
+					<button class="btn btn-info">Reset</button>
 				</div>
 			</div>
 		</div>
