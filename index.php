@@ -60,11 +60,11 @@
             
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 			  <ul class="nav navbar-nav">
-				<li class="active"><a href="#intro">Home</a></li>
-				<li><a href="#service">Medicine</a></li>
-				<li><a href="#service">Pathology</a></li>
+				<li class="active"><a href="#carouselhome">Home</a></li>
+				<li><a href="#boxes">Services</a></li>
+				<li><a href="#products">Products</a></li>
 				<li><a href="#pricing">Health Package</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#" data-toggle="modal" class="toggle" data-target="#contact-modal">Contact</a></li>
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -302,7 +302,7 @@
 	
 		
 	<!-- Section: POPULAR PRODUCTS -->
-    <section id="facilities" class="home-section paddingbot-60 mg-0">
+    <section id="products" class="home-section paddingbot-60 mg-0">
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
@@ -444,9 +444,9 @@
                     <div class="item active">
                 	    <div class="col-md-4 col-sm-6">
         				    <div class="block-text rel zmin">
-						        <a title="" href="#">Emergency Contraception</a>
+						        <a title="" href="#">Ritesh Kumar Jha</a>
 							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <p>Never thought we could even order pathology test over the internet. No daubt, it's the best and the only online Pathology service provider in India.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 					        </div>
 							<div class="person-text rel text-light">					
@@ -457,9 +457,9 @@
 						</div>
             			<div class="col-md-4 col-sm-6 hidden-xs">
 						    <div class="block-text rel zmin">
-						        <a title="" href="#">Orthopedic Surgery</a>
-							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <a title="" href="#">Rajesh Tripathi</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+						        <p>It is great to have such a website through which I can get all my required medicine's from the nearest chemist. something very useful it is!!</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 				            </div>
 							<div class="person-text rel text-light">
@@ -470,9 +470,9 @@
 						</div>
 						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
 							<div class="block-text rel zmin">
-								<a title="" href="#">Medical consultation</a>
+								<a title="" href="#">Shabbir Sheikh</a>
 								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <p>The search engine for medicine is very user friendly and also the health packages are quite affordable. It's probably better than anything else.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 							</div>
 							<div class="person-text rel text-light">
@@ -485,9 +485,9 @@
                     <div class="item">
                         <div class="col-md-4 col-sm-6">
         				    <div class="block-text rel zmin">
-						        <a title="" href="#">Birth control pills</a>
+						        <a title="" href="#">Priti Kumari</a>
 							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <p>I just love this website. it provides the most affordable health packages that I won't get anywhere else. It is for sure the best online healthcare website.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 					        </div>
 							<div class="person-text rel text-light">
@@ -498,9 +498,9 @@
 						</div>
             			<div class="col-md-4 col-sm-6 hidden-xs">
 						    <div class="block-text rel zmin">
-						        <a title="" href="#">Radiology</a>
-							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <a title="" href="#">Dr. Rizwan Ansari</a>
+							    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+						        <p>Finding chemist's used to be the most difficult part for me, but now this website does all the hard work. It has a list of the best chemist at any location.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 				            </div>
 							<div class="person-text rel text-light">
@@ -511,9 +511,9 @@
 						</div>
 						<div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
 							<div class="block-text rel zmin">
-								<a title="" href="#">Cervical Lesions</a>
+								<a title="" href="#">MD Bashar Uddin</a>
 								<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
-						        <p>Ne eam errem semper. Laudem detracto phaedrum cu vim, pri cu errem fierent fabellas. Quis magna in ius, pro vidit nonumy te, nostrud ...</p>
+						        <p>Till date, I have found that this is the only website that provides online pathology services. It's health packages are no daubt the most affordable one's.</p>
 							    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
 							</div>
 							<div class="person-text rel text-light">
@@ -625,46 +625,6 @@
 	</section>	 
 	<!-- /Section: pricing -->
 	
-	<section id="partner" class="home-section paddingbot-60">	
-		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow lightSpeedIn" data-wow-delay="0.1s">
-					<div class="section-heading text-center">
-					<h2 class="h-bold">Our partner</h2>
-					<p>Take charge of your health today with our specially designed health packages</p>
-					</div>
-					</div>
-					<div class="divider-short"></div>
-				</div>
-			</div>
-		</div>
-		
-           <div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-md-3">
-						<div class="partner">
-						<a href="#"><img src="img/dummy/partner-1.jpg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="partner">
-						<a href="#"><img src="img/dummy/partner-2.jpg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="partner">
-						<a href="#"><img src="img/dummy/partner-3.jpg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="partner">
-						<a href="#"><img src="img/dummy/partner-4.jpg" alt="" /></a>
-						</div>
-					</div>
-				</div>
-            </div>
-	</section>	
 
 	<footer>
 	
@@ -784,6 +744,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/moment.js"></script>
     <script src="js/dnslider.js"></script>
 	<script>
 		$(document).ready(function(){
@@ -793,197 +754,16 @@
 
 
 
-	<!-- CONTACT FORM MODAL -->
-	<div class="modal fade" id="medicine-modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button class="close" data-dismiss="modal">
-						&times;
-					</button>
-					<h4 class="modal-title mg-0">Contact Support</h4>
-				</div>
-				<div class="modal-body">
-					<p>We are waiting to here from you.</p>
-					<form>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-user"></i></span>
-								<input type="phone" class="form-control inp-dn" placeholder="Your Name" />
-							</div>
-							<br />
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-envelope"></i></span>
-								<input type="email" class="form-control inp-dn" placeholder="Email ID" />
-							</div>
-							<br />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-phone"></i></span>
-								<input type="number" class="form-control inp-dn" placeholder="Your Phone" />
-							</div>
-							<br/>
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-list"></i></span>
-								<select class="form-control inp-dn">
-									<option selected="true" disabled="true">Subject</option>
-									<option >Query</option>
-									<option >Issue</option>
-									<option >Message</option>
-								</select>
-							</div>
-							<br />
-							</div>
-						</div>
-						<textarea class="form-control inp-dn" placeholder="Enter Your Message Here"></textarea>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-info">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
+<?php
+	$contact_modal = file_get_contents("html/contact_modal.html");
+	$pathology_modal = file_get_contents("html/pathology_modal.html");
+	$medicine_modal = file_get_contents("html/medicine_modal.html");
+	echo($contact_modal);
+	echo($pathology_modal);
+	echo($medicine_modal);
+?>
 
 
-
-
-	<!-- CONTACT FORM MODAL -->
-	<div class="modal fade" id="pathology-modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button class="close" data-dismiss="modal">
-						&times;
-					</button>
-					<h4 class="modal-title mg-0">Contact Support</h4>
-				</div>
-				<div class="modal-body">
-					<p>We are waiting to here from you.</p>
-					<form>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-user"></i></span>
-								<input type="text" class="form-control inp-dn" placeholder="Your Name" />
-							</div>
-							<br />
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-envelope"></i></span>
-								<input type="email" class="form-control inp-dn" placeholder="Email ID" />
-							</div>
-							<br />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-phone"></i></span>
-								<input type="telephone" class="form-control inp-dn" list="suggestions" placeholder="Your Phone" />
-								<datalist id="suggestions">
-										<option value="Black">
-										<option value="Red">
-										<option value="Green">
-										<option value="Blue">
-										<option value="White">
-								</datalist>
-							</div>
-							<br/>
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-list"></i></span>
-								<select class="form-control inp-dn">
-									<option selected="true" disabled="true">Subject</option>
-									<option >Query</option>
-									<option >Issue</option>
-									<option >Message</option>
-								</select>
-							</div>
-							<br />
-							</div>
-						</div>
-						<textarea class="form-control inp-dn" placeholder="Enter Your Message Here"></textarea>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-info">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-	<!-- CONTACT FORM MODAL -->
-	<div class="modal fade" id="contact-modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button class="close" data-dismiss="modal">
-						&times;
-					</button>
-					<h4 class="modal-title mg-0">Contact Support</h4>
-				</div>
-				<div class="modal-body">
-					<p>We are waiting to here from you.</p>
-					<form>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-user"></i></span>
-								<input type="phone" class="form-control inp-dn" placeholder="Your Name" />
-							</div>
-							<br />
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-envelope"></i></span>
-								<input type="email" class="form-control inp-dn" placeholder="Email ID" />
-							</div>
-							<br />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-phone"></i></span>
-								<input type="number" class="form-control inp-dn" placeholder="Your Phone" />
-							</div>
-							<br/>
-							</div>
-							<div class="col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon inp-dn"><i class="fa fa-list"></i></span>
-								<select class="form-control inp-dn">
-									<option selected="true" disabled="true">Subject</option>
-									<option >Query</option>
-									<option >Issue</option>
-									<option >Message</option>
-								</select>
-							</div>
-							<br />
-							</div>
-						</div>
-						<textarea class="form-control inp-dn" placeholder="Enter Your Message Here"></textarea>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-info">Submit</button>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
 
 </html>
