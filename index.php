@@ -32,7 +32,6 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
 <div id="wrapper">
-	
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="top-area">
 			<div class="container">
@@ -64,7 +63,14 @@
 				<li><a href="#boxes">Services</a></li>
 				<li><a href="#products">Products</a></li>
 				<li><a href="#pricing">Health Package</a></li>
-				<li><a href="#" data-toggle="modal" class="toggle" data-target="#contact-modal">Contact</a></li>
+				<li>
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Login</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">User</a></li>
+						<li><a href="#">Chemist</a></li>
+						<li><a href="#">Admin</a></li>
+					</ul>
+				</li>
 			  </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -145,7 +151,7 @@
 						<div class="box text-center">
 							
 							<i class="fa fa-medkit fa-3x circled bg-skin"></i>
-							<h4 class="h-bold">Search Your Medicine</h4>
+							<!--<h4 class="h-bold">Search Your Medicine</h4>-->
 							<p>
 							Search & buy your medicine quickly with our user friendly search engine easily.
 							</p>
@@ -157,7 +163,7 @@
 					<div class="wow fadeInUp" data-wow-delay="0.2s">
 						<div class="box text-center">
 							<i class="fa fa-user-md fa-3x circled bg-skin"></i>
-							<h4 class="h-bold">Pathology Services</h4>
+							<!--<h4 class="h-bold">Pathology Services</h4>-->
 							<p>
 							Book any pathology services and get all your test done quickly at low cost from our lab.
 							</p>
@@ -205,8 +211,15 @@
 		
 	<section id="service" class="home-section nopadding paddingtop-60">
 
-		<div class="container">
-
+		<div class="container">		
+		<div class="wow fadeInDown" data-wow-delay="0.1s">
+			<div class="section-heading text-center">
+				<h2 class="h-bold">Our Services</h2>
+			</div>
+		</div>
+		<div class="divider-short"></div>
+		<br/>
+		<br/>
         <div class="row">
 			<div class="col-sm-6 col-md-6">
 				<span class="hidden-xs">
@@ -307,9 +320,9 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
-					<div class="section-heading text-center">
-					<h2 class="h-bold">Popular Product</h2>
-					</div>
+						<div class="section-heading text-center">
+							<h2 class="h-bold">Popular Product</h2>
+						</div>
 					</div>
 					<div class="divider-short"></div>
 				</div>
@@ -633,20 +646,20 @@
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="widget">
-						<h5>About Medicio</h5>
+						<h5>About Us</h5>
 						<p>
-						Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
+							GharParDawa is a website which collaborate the chemist available in your sociality.
+							The motive of this website is that anyone can easily find the required medicine in an easier way. 
 						</p>
 					</div>
 					</div>
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="widget">
-						<h5>Information</h5>
+						<h5>Quick Links</h5>
 						<ul>
-							<li><a href="#">Home</a></li>
+							<li><a href="#">List of Chemist</a></li>
 							<li><a href="#">Laboratory</a></li>
-							<li><a href="#">Medical treatment</a></li>
-							<li><a href="#">Terms & conditions</a></li>
+							<li><a href="#">Terms & Condition</a></li>
 						</ul>
 					</div>
 					</div>
@@ -654,9 +667,9 @@
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="widget">
-						<h5>Medicio center</h5>
+						<h5>Contact Us</h5>
 						<p>
-						Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
+						For any information or query, feel free to contact us through below details.
 						</p>
 						<ul>
 							<li>
@@ -669,13 +682,19 @@
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-								</span> +62 0888 904 711
+								</span> +91 9204 128 561
 							</li>
 							<li>
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle fa-stack-2x"></i>
 									<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-								</span> hello@medicio.com
+								</span> contact@gharpardawa.com
+							</li>
+							<li>
+								<span class="fa-stack fa-lg">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-hospital-o fa-stack-1x fa-inverse"></i>
+								</span> Baridih Basti, Bajrang Chowk, Jamshedpur
 							</li>
 
 						</ul>
@@ -685,8 +704,8 @@
 				<div class="col-sm-6 col-md-4">
 					<div class="wow fadeInDown" data-wow-delay="0.1s">
 					<div class="widget">
-						<h5>Our location</h5>
-						<p>Baridih Basti Bajrang Chowk Jamshedpur</p>		
+						<h5>Review Us</h5>
+						<p><a href="#" data-toggle="modal" class="toggle" data-target="#contact-modal">Click Here</a> to tell us your reviews related to our services.</p>		
 						
 					</div>
 					</div>
@@ -744,16 +763,11 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/moment.js"></script>
+    <script src="js/angular.js"></script>
     <script src="js/dnslider.js"></script>
-	<script>
-		$(document).ready(function(){
-		});
-	</script>
 
-
-
-
+	
+</div>
 <?php
 	$contact_modal = file_get_contents("html/contact_modal.html");
 	$pathology_modal = file_get_contents("html/pathology_modal.html");

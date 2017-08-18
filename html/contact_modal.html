@@ -10,21 +10,21 @@
 					</button>
 					<h4 class="modal-title mg-0">Contact Support</h4>
 				</div>
+				<form id="contact_form">
 				<div class="modal-body">
 					<p>We are waiting to here from you.</p>
-					<form>
 						<div class="row">
 							<div class="col-sm-6">
 							<div class="input-group">
 								<span class="input-group-addon inp-dn"><i class="fa fa-user"></i></span>
-								<input type="phone" class="form-control inp-dn" placeholder="Your Name" />
+								<input type="phone" name="name" class="form-control inp-dn contact" placeholder="Your Name" />
 							</div>
 							<br />
 							</div>
 							<div class="col-sm-6">
 							<div class="input-group">
 								<span class="input-group-addon inp-dn"><i class="fa fa-envelope"></i></span>
-								<input type="email" class="form-control inp-dn" placeholder="Email ID" />
+								<input type="email" name="email" class="form-control inp-dn contact" placeholder="Email ID" />
 							</div>
 							<br />
 							</div>
@@ -33,14 +33,14 @@
 							<div class="col-sm-6">
 							<div class="input-group">
 								<span class="input-group-addon inp-dn"><i class="fa fa-phone"></i></span>
-								<input type="number" class="form-control inp-dn" placeholder="Your Phone" />
+								<input type="telephone" name="phone" class="form-control inp-dn contact" placeholder="Your Phone" />
 							</div>
 							<br/>
 							</div>
 							<div class="col-sm-6">
 							<div class="input-group">
 								<span class="input-group-addon inp-dn"><i class="fa fa-list"></i></span>
-								<select class="form-control inp-dn">
+								<select class="form-control inp-dn contact" name="subject">
 									<option selected="true" disabled="true">Subject</option>
 									<option >Query</option>
 									<option >Issue</option>
@@ -50,11 +50,12 @@
 							<br />
 							</div>
 						</div>
-						<textarea class="form-control inp-dn" placeholder="Enter Your Message Here"></textarea>
-					</form>
+						<textarea class="form-control inp-dn contact" name="message" placeholder="Enter Your Message Here"></textarea>
 				</div>
+				</form>
 				<div class="modal-footer">
-					<button class="btn btn-info">Submit</button>
+					<h4 class="text-info dsp-n" id="contact_msg">Message Sent!!</h4>
+					<button class="btn btn-info" id="contact_form_submit">Send Message</button>
 				</div>
 			</div>
 		</div>
