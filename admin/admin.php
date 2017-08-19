@@ -18,6 +18,7 @@
    
 </head>
 <body class="">
+<div class="bg-primary">
 <br/>
 <div class="container-fluid">
 	<div class="row">
@@ -25,17 +26,24 @@
 			<img src="image/user.jpg" class="img img-circle mx-100 img-thumbnail img-responsive inline" />
 		</div>
 		<div class="col-sm-9">
-			<p class="mg-0 text-info text-right"><b>Last Login : 24th JUL 2017</b></p>
 			<hr/>
+			<span class="badge  pd-10 bg-wh txt-blu"> &nbsp; USERS : 256 &nbsp; </span>  &nbsp;
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; CHEMISTS : 25 &nbsp; </span>  &nbsp;
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; MEDICINES SOLD : 1024 &nbsp; </span> &nbsp;
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; TOTAL TRANSACTION: <i class="fa fa-inr"></i> 24,000 </span> &nbsp;
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; HIGHEST PAYS : <i class="fa fa-inr"></i> 10,000  &nbsp; </span><br/><br/>
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; <i class="fa fa-envelope"></i> &nbsp; 24 &nbsp; </span> &nbsp;
+			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; <i class="fa fa-medkit"></i> &nbsp; 54 &nbsp; </span> &nbsp;
 		</div>
 	</div>	
 </div>
 <br/>
-	<div class="navbar navbar-default  br-rd-0 mg-0 br-tr b-bt-blu b-tp-blu navbar-inverse">
+</div>
+	<div class="navbar navbar-default  br-rd-0 mg-0 br-tr navbar-inverse">
 		<div class="container-fluid">
-			<div class="navbar-header bg-blu">
-				<a href="" class="navbar-brand bg-blu txt-hd">Admin Username</a>
-				<button class="toggle navbar-toggle" data-toggle="collapse" data-target="#menu">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand txt-hd">Admin Username</a>
+				<button class="toggle navbar-toggle text-wh br-wh" data-toggle="collapse" data-target="#menu">
 					<span class="fa fa-align-right"></span>
 				</button>
 			</div>

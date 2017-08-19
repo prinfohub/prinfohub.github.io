@@ -26,7 +26,7 @@
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
 			<center>
-			<h1>...</h1>
+			<h1><i class="fa fa-user-md"></i><br/>...</h1>
 			</center>
 					<div class="well bg-tr br-tr no-shadow ">
 						<div class="input-group br-rd-0 br-blu">
@@ -40,7 +40,7 @@
 						</div>
 						<br/>
 						<center>
-						<button class="btn btn-default btn-lg br-rd-0">L O G I N</button>
+						<button class="btn btn-default btn-block btn-lg br-rd-0">L O G I N</button>
 						</center>
 					</div>
 				</div>
