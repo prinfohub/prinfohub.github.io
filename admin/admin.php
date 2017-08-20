@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <title>GHAR PAR DAWA</title>
-	<!--<base href="/apna/" />-->
+	<base href="/apna.prinfohub.in/" />
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/dn.css" rel="stylesheet" />
