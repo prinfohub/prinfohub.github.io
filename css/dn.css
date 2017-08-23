@@ -2,7 +2,10 @@
 	border-top:solid 4px #0099fc !important;
 }
 .br-bt-blu{
-	border-bottom:solid 4px #0099fc !important;
+	border-bottom:solid 2px #0099fc !important;
+}
+.br-bt-grn{
+	border-bottom:solid 1px gray;
 }
 .dnitems-div{
 	width:100%;

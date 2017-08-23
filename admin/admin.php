@@ -1,3 +1,12 @@
+<?php
+	session_start();
+	if( !isset($_SESSION["login_status"]) || !isset($_SESSION["login_user_id"]) ){
+		header("location:/apna/admin/");
+		exit();
+	}
+	require("db_connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +17,7 @@
     <meta name="author" content="">
 
     <title>GHAR PAR DAWA</title>
-	<base href="/" />
+	<base href="/apna/" />
     <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/dn.css" rel="stylesheet" />
@@ -18,138 +27,120 @@
    
 </head>
 <body class="">
-<div class="bg-primary">
+<div class="well br-rd-0 br-tr bg-blu">
+	<center>
+		<h1 class="txt-hd2"><big><i class="fa fa-medkit"></i></big><br/>Ghar Par Dawa</h1>
+		<div class="btn-group">
+			<a href="#" class="btn btn-primary bg-tr br-rd-0"><h4 class="mg-0"><b><i class="fa fa-facebook"></i></b></h4></a>
+			<a href="#" class="btn btn-primary bg-tr br-rd-0"><h4 class="mg-0"><b><i class="fa fa-google-plus"></i></b></h4></a>
+			<a href="#" class="btn btn-primary bg-tr br-rd-0"><h4 class="mg-0"><b><i class="fa fa-twitter"></i></b></h4></a>
+			<a href="#" class="btn btn-primary bg-tr br-rd-0"><h4 class="mg-0"><b><i class="fa fa-linkedin"></i></b></h4></a>
+		</div>
+	</centeR>
+</div>
 <br/>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-3">
-			<img src="image/user.jpg" class="img img-circle mx-100 img-thumbnail img-responsive inline" />
-		</div>
-		<div class="col-sm-9">
-			<hr/>
-			<span class="badge  pd-10 bg-wh txt-blu"> &nbsp; USERS : 256 &nbsp; </span>  &nbsp;
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; CHEMISTS : 25 &nbsp; </span>  &nbsp;
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; MEDICINES SOLD : 1024 &nbsp; </span> &nbsp;
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; TOTAL TRANSACTION: <i class="fa fa-inr"></i> 24,000 </span> &nbsp;
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; HIGHEST PAYS : <i class="fa fa-inr"></i> 10,000  &nbsp; </span><br/><br/>
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; <i class="fa fa-envelope"></i> &nbsp; 24 &nbsp; </span> &nbsp;
-			<span class="badge pd-10 bg-wh txt-blu"> &nbsp; <i class="fa fa-medkit"></i> &nbsp; 54 &nbsp; </span> &nbsp;
-		</div>
-	</div>	
-</div>
-<br/>
-</div>
-	<div class="navbar navbar-default  br-rd-0 mg-0 br-tr navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="" class="navbar-brand txt-hd">Admin Username</a>
-				<button class="toggle navbar-toggle text-wh br-wh" data-toggle="collapse" data-target="#menu">
-					<span class="fa fa-align-right"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse " id="menu">
-				<ul class="nav navbar-nav ">
-					<li><a href="logout.php" class="sm"><i class="fa fa-home"></i> Home </a></li>
-					<li>
-						<a href="#" data-toggle="dropdown" class=""> <i class="fa fa-user"></i> Users <i class="caret"></i></a>
-						<ul class="dropdown-menu br-tp-blu">
-							<li class="divider"></li>
-							<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Users</a></li>
-							<li class="divider"></li>
-							<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New User</a></li>
-							<li class="divider"></li>
-							<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact a User</a></li>
-							<li class="divider"></li>
-						</ul>
-					</li>
-				<li>
-					<a href="#" data-toggle="dropdown" class=""><i class="fa fa-user-md"></i>&nbsp; Chemist <i class="caret"></i></a>
+	<div class="col-sm-3">
+		<div class="">
+			<ul class="list-group ">
+				<li class="list-group-item">
+					<a href="#" data-toggle="dropdown" class=""> <i class="fa fa-user"></i> Users <i class="caret"></i></a>
 					<ul class="dropdown-menu br-tp-blu">
 						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Chemist</a></li>
+						<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Users</a></li>
 						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Chemist</a></li>
+						<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New User</a></li>
 						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact a Chemist</a></li>
+						<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact a User</a></li>
 						<li class="divider"></li>
 					</ul>
 				</li>
-				<li>
-					<a href="#" data-toggle="dropdown" class=""><i class="fa fa-medkit"></i>&nbsp; Medicine <i class="caret"></i></a>
-					<ul class="dropdown-menu br-tp-blu">
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Medicine</a></li>
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Medicine</a></li>
-						<li class="divider"></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" data-toggle="dropdown" class=""><i class="fa fa-cogs"></i>&nbsp; Pathology <i class="caret"></i></a>
-					<ul class="dropdown-menu br-tp-blu">
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Tests</a></li>
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Test</a></li>
-						<li class="divider"></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-usd"></i>&nbsp; Transaction</a>
-				</li>
-				<li>
-					<a href="#" data-toggle="dropdown" class=""><i class="fa fa-globe"></i>&nbsp; Website <i class="caret"></i></a>
-					<ul class="dropdown-menu br-tp-blu">
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-list-alt"></i> &nbsp; Modify Homepage</a></li>
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-edit"></i> &nbsp; Update Contact</a></li>
-						<li class="divider"></li>
-						<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact Developer</a></li>
-						<li class="divider"></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class=""><i class="fa fa-user"></i>&nbsp; Logout</a>
-				</li>
+			<li class="list-group-item">
+				<a href="#" data-toggle="dropdown" class=""><i class="fa fa-user-md"></i>&nbsp; Chemist <i class="caret"></i></a>
+				<ul class="dropdown-menu br-tp-blu">
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Chemist</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Chemist</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact a Chemist</a></li>
+					<li class="divider"></li>
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<a href="#" data-toggle="dropdown" class=""><i class="fa fa-medkit"></i>&nbsp; Medicine <i class="caret"></i></a>
+				<ul class="dropdown-menu br-tp-blu">
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Medicine</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Medicine</a></li>
+					<li class="divider"></li>
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<a href="#" data-toggle="dropdown" class=""><i class="fa fa-cogs"></i>&nbsp; Pathology <i class="caret"></i></a>
+				<ul class="dropdown-menu br-tp-blu">
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-list"></i> &nbsp; View all Tests</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-plus-circle"></i> &nbsp; Add New Test</a></li>
+					<li class="divider"></li>
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<a href="#"><i class="fa fa-usd"></i>&nbsp; Transaction</a>
+			</li>
+			<li class="list-group-item">
+				<a href="#" data-toggle="dropdown" class=""><i class="fa fa-globe"></i>&nbsp; Website <i class="caret"></i></a>
+				<ul class="dropdown-menu br-tp-blu">
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-list-alt"></i> &nbsp; Modify Homepage</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-edit"></i> &nbsp; Update Contact</a></li>
+					<li class="divider"></li>
+					<li><a href=""><i class="fa fa-send"></i> &nbsp; Contact Developer</a></li>
+					<li class="divider"></li>
+				</ul>
+			</li>
+			<li class="list-group-item">
+				<a href="#" class=""><i class="fa fa-user"></i>&nbsp; Logout</a>
+			</li>
 			</ul>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="text-hd mg-0">Recent Orders</h3>
+			</div>
+			<div class="panel-body">
+				<?php
+					$query = "SELECT medicine.name as medname, orders.ordate as odate, orders.amount as amount from orders,medicine WHERE medicine.mcode=orders.mcode;";
+					$res = @mysqli_query( $con, $query ) or die(mysqli_error($con));
+					while($row = mysqli_fetch_array( $res )){
+						$medname = $row["medname"];
+						$date = $row["odate"];
+						$amount = $row["amount"];
+						echo("
+							<div class='alert br-bt-grn br-rd-0 alert-dismissable'>
+								<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+								<h4 class='mg-0 txt-hd'>MEDICINE : $medname</h4>
+								<p>Date : $date</p>
+								<p><i class='fa fa-inr'></i> $amount</p>
+							</div>
+						");
+					}
+
+
+
+				?>
 			</div>
 		</div>
 	</div>
-	
-	<br/>
-	<br/>
-	<script>
-		$(document).ready(function(){
-			setTimeout(function(){
-				$(".progress-bar").css("width","50%");
-			},2000);
-			setTimeout(function(){
-				$(".progress-bar").css("width","70%");
-			},3500);
-			setTimeout(function(){
-				$(".progress-bar").css("width","90%");
-			},5000);
-			setTimeout(function(){
-				$(".progress-bar").css("width","100%");
-			},7000);
-		});
-	</script>
-	<div class="container">
-		<div class="well br-rd-0 br-tr br-bt-blu no-shadow pd-0">
-			<div class="progress br-rd-0 progress-xs" style="height:6px;">
-				<div class="progress-bar progress-bar-striped active progress-bar-primary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
-				</div>
-			</div>
-			<br/>
-			<br/>
-		</div>
-		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4">
+	<div class="col-sm-3">
 				<ul class="list-group">
-					<li class="list-group-item"><big>WEBSITE STATISTICS</big></li>
+					<li class="list-group-item active"><big>WEBSITE STATISTICS</big></li>
 					<li class="list-group-item ">
 						TOTAL VISITORS <span class="badge">1026</span>
 					</li>
@@ -166,6 +157,21 @@
 						ONLINE CHEMIST <span class="badge">2034</span>
 					</li>
 				</ul>
+	</div>
+	</div>
+</div>	
+	<br/>
+	<br/>
+	<script>
+
+	</script>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+
 			</div>
 		</div>
 	</div>
