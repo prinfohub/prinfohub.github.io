@@ -141,6 +141,9 @@ background-size: 100% 7px;
 .dn-hsh:hover{-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;-o-transition:0.3s all ease;transition:0.3s all ease;box-shadow:0px 0px 10px;-webkit-box-shadow:0px 0px 10px;-moz-box-shadow:0px 0px 10px;-o-box-shadow:0px 0px 10px;}
 .br-rd-0{border-radius:0px !important;}
 .pd-0{padding:0px !important;}
+.cpointer{
+	cursor:pointer !important;
+}
 .br-bl{border:solid 4px #222;}
 .mwd-400{max-width:500px;}
 .br-gr{border-bottom:solid 1px rgb(200,200,200);}
@@ -214,7 +217,7 @@ background-size: 100% 7px;
 }
 
 .br-blu{
-	border:solid 2px #441d8b !important;
+	border:solid 2px #0099fc !important;
 	color:#441d8b;
 }
 .f12{
